@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="inner-container">
+            <h1 class="sr-only">Company Name</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="75.14" height="72.676" viewBox="0 0 75.14 72.676">
+                <path
+                    d="M51.85 29.084c8.017 0 14.522-6.514 14.522-14.536C66.372 6.524 59.866 0 51.85 0c-8.03 
+                    0-14.573 6.524-14.573 14.548 0 8.022 6.543 14.536 14.573 14.536M0 3.256h24.701v69.42H0zM57.695 
+                    37.136L35.367 50.087l11.5 22.589h28.272z">
+                </path>
+            </svg>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Website</a></li>
+                    <li><a href="#">Packaging</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="inner-container">
+            <h2>Project Form</h2>
+            <p>Fill in the fields below and describe your needs.</p>
+            <p>In return we will contact you and suggest solutions for your business needs.</p>
+            <form action="#" method="post" name="project-form">
+                <fieldset>
+                    <div>
+                        <label for="name">Name/Surname</label>
+                        <input id="name" type="text" name="name" required minlength="2" autofocus placeholder="e.g Adam">
+                    </div>
+                    <div>
+                        <label for="company">Company</label>
+                        <input id="company" name="company" type="text" placeholder="Company Name">
+                    </div>
+                    <div>
+                        <label for="tel">Tel.</label>
+                        <input id="tel" type="text" name="tel" required placeholder="123-555-6666">
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input id="city" type="text" name="city" placeholder="For your region's code" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="sam.smith@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="website">Website</label>
+                        <input id="website" type="text" name="website" required placeholder="www.company.com">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <h3>Specifics</h3>
+                    <div>
+                        <label for="deadline">Deadline</label>
+                        <input id="deadline" type="date" name="deadline" required>
+                    </div>
+                    <div>
+                        <label for="budget">Budget</label>
+                        <input id="budget" type="text" name="budget" placeholder="$5,000 - $10,000" required>
+                    </div>
+                    <div>
+                        <label for="project-url">Project URL</label>
+                        <input id="project-url" type="text" name="project-url" placeholder="www.website.com" required>
+                    </div>
+                    <div>
+                        <label for="target-audience">Target Audience</label>
+                        <input id="target-audience" type="text" name="target-audience"
+                            placeholder="Your specific target audience" required>
+                    </div>
+                    <div>
+                        <label for="project-description">Project Description</label>
+                        <textarea name="project-description" id="project-description" cols="30" rows="10" required
+                            minlength="50" maxlength="500" placeholder="Describe your vision or needs"
+                            autocomplete="off"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <p>By completing and sending the data, you agree to the <a href="#">Privacy Policy</a></p>
+                    <div>
+                        <input type="checkbox" name="checkbox" id="checkbox" required>
+                        <label for="checkbox">Accept</label>
+                    </div>
+                    <div>
+                        <input type="submit" id="submit" name="submit" value="Send >">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
 </body>
+
 </html>
